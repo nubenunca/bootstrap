@@ -2,13 +2,14 @@ const header = document.querySelector(".section-header");
 const main = document.getElementById("main");
 const footer = document.getElementById("footer");
 const sectionRegistrar = document.getElementById("section-form-registrar");
+const cardContainer = document.getElementById("card-container");
 
 //se inyectó el Navbard desde
 
 header.innerHTML = `
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-        <a class="navbar-brand" href="#home-page">PetLove</a>
+        <a class="navbar-brand" href="/pages/biaipets.html">PetLove</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -18,14 +19,14 @@ header.innerHTML = `
                 <a class="nav-link active" aria-current="page" href="/pages/home.html" id="home-page">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href='/pages/formulario.html' id="registrar">Registrar</a>
+                <a class="nav-link" href='/pages/registrar.html' id="registrar">Registrar</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Modificar</a>
+                <a class="nav-link" href="/pages/modificar.html">Modificar</a>
             </li>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="/pages/consultar.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 consultar
                 </a>
             </ul>
@@ -37,13 +38,29 @@ footer.innerHTML = `
     <footer class="bg-body-tertiary text-center text-lg-start position-absolute bottom-0" style ="width:100%"  >
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2020 Copyright:
-    <a class="text-body" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <i class="bi bi-envelope"></i> www.entornobiai.com <br>
+    +57 350-571-16-65 <br>
+    contacto@tiendasbiai.com
+
+    <a class="text-body" href="https://www.entornobiai.com/>Vísitanos en nuestra página web</a>
     </div>
-    <!-- Copyright -->
     </footer>
 `;
 
+function cardsContainers() {
+  for (let card = 1; card < 6; card++) {
+    cardContainer.innerHTML += `
+    <div class="card mascota  col" style="width: 100rem;">
+          <img src="https://source.unsplash.com/random/1920x1080" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Nombre:Saori</h5>
+              <p class="card-text"> Edad:7 años .</p>
+              <p class="card-text"> Nombre propietario: Marylin Restrepo</p>
+          <a href="#" class="btn btn-primary">Actualizar</a>
+          </div>`;
+  }
+}
+cardsContainers();
 // const btnRegistrar = document.getElementById("registrar");
 
 // function seccionRegistrar() {

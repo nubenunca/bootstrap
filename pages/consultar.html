@@ -25,6 +25,10 @@
       href="./public/icons/favicon.ico"
       type="image/x-icon"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <!--links styles-->
 
     <!-- <link rel="stylesheet" href="./src/styles/reset.css"> -->
@@ -34,52 +38,53 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
     <!--title teh page web-->
     <title>Bootstrap</title>
   </head>
   <body>
     <header class="section-header"></header>
-    <main id="main">
-      <div class="container col-xxl-8 px-4 py-5 img-fluid rounded flex-center">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img
-              src="https://img.freepik.com/psd-gratis/hermoso-gato-retrato-aislado_23-2150186061.jpg?t=st=1714739079~exp=1714742679~hmac=9187c89335748201922f630e65a36b1df237d91fd4f8710505fda18c61a23fe3&w=900"
-              class="d-block mx-lg-auto img-fluid"
-              rounder-0
-              alt="Bootstrap Themes"
-              width="700"
-              height="500"
-              loading="lazy"
+    <main id="main-consultar ">
+      <nav class="navbar bg-body-tertiary d-flex-center">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Nombre de tu mascota"
+              aria-label="consultar"
             />
-          </div>
-          <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
-              Responsive left-aligned hero with image
-            </h1>
-            <p class="lead">
-              Quickly design and customize responsive mobile-first sites with
-              Bootstrap, the world’s most popular front-end open source toolkit,
-              featuring Sass variables and mixins, responsive grid system,
-              extensive prebuilt components, and powerful JavaScript plugins.
-            </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
-                Primary
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary btn-lg px-4"
-              >
-                Default
-              </button>
-            </div>
-          </div>
+            <button
+              class="btn bs-info-border-subtle bg-info-subtle"
+              type="submit"
+            >
+              consultar
+            </button>
+          </form>
         </div>
+      </nav>
+      <div>
+        <h1
+          class="display-5 d-flex justify-content text-body-emphasis lh-1 mb-3"
+        >
+          Resultado de tus búsquedas
+        </h1>
+      </div>
+      <div id="card-container" class="d-flex flex-row flex-wrap">
+        <!-- Aquí va la card insertada desde javascript -->
+
+        <!-- <div class="card mascota" style="width: 18rem">
+          <img
+            src="https://source.unsplash.com/random/1920x1080"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Nombre:Saori</h5>
+            <p class="card-text">Edad:7 años .</p>
+            <p class="card-text">Nombre propietario: Marylin Restrepo</p>
+            <a href="#" class="btn btn-primary">Actualizar</a>
+          </div>
+        </div> -->
       </div>
     </main>
     <footer id="footer" style="width: 100%"></footer>
