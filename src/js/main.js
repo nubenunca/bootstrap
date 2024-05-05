@@ -38,9 +38,9 @@ footer.innerHTML = `
     <footer class="bg-body-tertiary text-center text-lg-start position-absolute bottom-0" style ="width:100%"  >
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-    <i class="bi bi-envelope"></i> www.entornobiai.com <br>
-    +57 350-571-16-65 <br>
-    contacto@tiendasbiai.com
+    <i class="bi bi-window-stack"></i> www.entornobiai.com <br>
+    <i class="bi bi-whatsapp"></i> +57 350-571-16-65 <br>
+    <i class="bi bi-envelope"></i>  contacto@tiendasbiai.com
 
     <a class="text-body" href="https://www.entornobiai.com/>Vísitanos en nuestra página web</a>
     </div>
@@ -57,6 +57,7 @@ function cardsContainers() {
               <p class="card-text"> Edad:7 años .</p>
               <p class="card-text"> Nombre propietario: Marylin Restrepo</p>
           <a href="#" class="btn btn-primary">Actualizar</a>
+          <a href="#" class="btn btn-danger">eliminar</a>
           </div>`;
   }
 }
